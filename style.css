@@ -1,44 +1,82 @@
 body {
-    background-color: lightgray;
-    width: 100%;
-    font-family: "Montserrat";
-    color: black;
-    font-size: 110%;
-    line-height: 150%
+  margin: 0;
+  font-family: 'Poppins', 'sans-sarif';
+  text-shadow: 1px 1px 2px black;
+  color: white;
 }
 
-h1, h2, h3 {
-    font-size: 130%;
-    line-height: 150%;
+a {
+    color:white !important;
+}
+.title {
+  font-size: 50px;
+  margin-top: 0;
 }
 
-.card {
-    background-color: white;
-    width: 75%;
-    border-radius: 4%;
-    padding: 5px;
-    border: 10px;
-    box-shadow: 5px 5px 5px black;
-    margin: 20px auto;
-    text-align: center;
+.panel {
+  color: white;
+  text-align: center;
+  height: 150vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
 }
 
-#container {
-    width: 100%;
-    text-align: center;
+.first-panel {
+  background-image: url('https://res.cloudinary.com/yuvd/image/upload/v1571914326/portfolio/bg-mb_flhydb.jpg');
 }
 
-.list-inline > li {
-    display: inline-block;
-    margin: 0 20px;
-    list-style: none;  
+.second-panel {
+  background-color: black;
 }
 
-.list-inline {
-    padding: 0;
+.third-panel {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://res.cloudinary.com/yuvd/image/upload/v1571914332/portfolio/me2_isrtiz.png');
 }
 
-.sm-icon {
-    text-decoration: none;
-    color: black;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
 }
+
+.grid-2cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.project-card {
+background: black; 
+padding: 30px; 
+border-radius: 4px; 
+box-shadow: 10px 10px 5px 0px rgba(255, 255, 255, 0.742);
+}
+
+.navbar-lewagon {
+    justify-content: center;
+    background-color: transparent;
+    transition: 0.5s background-color ease;
+  }
+  
+  .navbar-lewagon .navbar-collapse {
+    flex-grow: 0;
+  }
+  
+  .navbar-lewagon .navbar-brand img {
+    width: 40px;
+  }
+
+  .navbar-lewagon-white {
+      background-color: #f7f7f7;
+  }
