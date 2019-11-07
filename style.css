@@ -1,49 +1,95 @@
 body {
   margin: 0;
   font-family: 'Poppins', 'sans-sarif';
-  text-shadow: 1px 1px 2px black;
-  color: white;
+  scroll-behavior: smooth;
+  
 }
 
-a {
-    color:white !important;
-}
+
 .title {
-  font-size: 50px;
+  font-size: 52px !important;
   margin-top: 0;
 }
 
+p {
+  font-size: 20px !important;
+}
+
+#first {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://res.cloudinary.com/yuvd/image/upload/v1572955103/Screen_Shot_2019-11-05_at_1.57.46_PM_k0ftre.png');
+    background-size: 100vw;
+    text-shadow: 1px 1px 2px black;
+    color: white !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+#second {
+  background-color: #f7f7f7;
+  
+}
+
+#third {
+  background-color: white;
+}
+
+#fourth {
+  background-color: #f7f7f7;
+}
+
+#fifth {
+  background-color: white;
+}
+
+#sixth {
+  background-color: #f7f7f7;
+}
+
+
+
+#fourth ul {
+  height: 100px;
+}
+
+
+#sixth a {
+  color: black !important;
+}
+
 .panel {
-  color: white;
+  color: black;
   text-align: center;
-  height: 150vh;
+  height: 105vh;
   width: 100vw;
-  padding: 0;
+  padding: 50px;
   margin: 0;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   justify-items: center;
+ 
 }
 
-.first-panel {
-  background-image: url('https://res.cloudinary.com/yuvd/image/upload/v1571914326/portfolio/bg-mb_flhydb.jpg');
-}
 
-.second-panel {
-  background-color: black;
-}
-
-.third-panel {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://res.cloudinary.com/yuvd/image/upload/v1571914332/portfolio/me2_isrtiz.png');
-}
 
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
+  justify-items: center;
 }
+
+#fourth .grid .project-card {
+  height: 510px;
+}
+
+/* #sixth .grid {
+  justify-items: center;
+} */
 
 .grid-2cols {
   display: grid;
@@ -53,14 +99,14 @@ a {
 
 img{
   max-width: 100%;
-  max-height: 100%;
+  /* max-height: 100%; */
+  padding-bottom: 20px;
 }
 
-.project-card {
-background: black; 
+.project-card { 
 padding: 30px; 
 border-radius: 4px; 
-box-shadow: 10px 10px 5px 0px rgba(255, 255, 255, 0.742);
+box-shadow: 0 10px 30px rgba(0,0,0,.1);
 }
 
 .navbar-lewagon {
@@ -79,4 +125,55 @@ box-shadow: 10px 10px 5px 0px rgba(255, 255, 255, 0.742);
 
   .navbar-lewagon-white {
       background-color: #f7f7f7;
+  }
+
+  #sixth a {
+    width: 250px;
+    height: 200px;
+  }
+
+  #sixth .fa-linkedin:hover {
+    color: #004183;
+    transition: 0.5s ease;
+  }
+
+  #sixth .fa-github-alt:hover {
+    color: #F4CBB2;
+    transition: 0.5s ease;
+  }
+
+  #sixth .fa-envelope:hover {
+    color: silver;
+    transition: 0.5s ease;
+  }
+
+
+  .link-card {
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 960px) {
+    /* For a screen < 960px, this CSS will be read */
+    p {
+      font-size: 15px !important;
+    }
+
+    .title {
+      font-size: 39px !important;
+    }
+  }
+  @media (max-width: 720px) {
+    /* For a screen < 720px, this CSS will be read */
+    p {
+      font-size: 10px !important;
+    }
+
+    .title {
+      font-size: 26px;
+    }
   }
