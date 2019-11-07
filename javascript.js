@@ -21,8 +21,6 @@ const changeNavbarActiveItem = () => {
 window.addEventListener("scroll", changeNavbarActiveItem);
 
 
-
-const cl = new cloudinary.Cloudinary({cloud_name: "yuvd", secure: true});
 const projectVids = document.querySelectorAll('video')
 
 projectVids.forEach(video => {
