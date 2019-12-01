@@ -16,7 +16,7 @@ p {
 }
 
 #first {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://res.cloudinary.com/yuvd/image/upload/v1572955103/Screen_Shot_2019-11-05_at_1.57.46_PM_k0ftre.png');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/assets/images/banner.png');
     background-size: 100vw;
     text-shadow: 1px 1px 2px black;
     color: white !important;
