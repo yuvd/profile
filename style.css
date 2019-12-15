@@ -167,6 +167,10 @@ box-shadow: 0 10px 30px rgba(0,0,0,.1);
     .title {
       font-size: 39px !important;
     }
+
+    .grid-2cols {
+      grid-template-columns: 1fr;
+    }
   }
   @media (max-width: 720px) {
     /* For a screen < 720px, this CSS will be read */
