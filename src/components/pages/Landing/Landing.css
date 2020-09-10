@@ -1,0 +1,19 @@
+#pitchImg {
+	max-height: 80%;
+}
+
+.landingTitle {
+	font-family: Quatro Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	/* identical to box height */
+
+	color: #303030;
+}
+
+#landingSubtitle {
+	font-weight: 300;
+	font-size: 16px;
+}

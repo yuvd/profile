@@ -5,7 +5,19 @@
 }
 
 .page {
-	text-align: center;
+	padding-left: 15%;
+	padding-top: 5%;
 	width: 100%;
 	box-sizing: border-box;
+	overflow: scroll;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.pageExpl {
+	margin-bottom: 60px;
+	max-width: 80%;
+	word-wrap: break-word;
 }
