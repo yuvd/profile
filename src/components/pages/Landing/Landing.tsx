@@ -7,37 +7,56 @@ export interface props {}
 export default function Landing(props: props) {
 	return (
 		<div className="page">
-			<p className="landingTitle">Yuval Drori</p>
-			<p id="landingSubtitle">
+			<p className="pageTitle">Yuval Drori</p>
+			<p id="pageSubtitle">
 				{
-					"Fullstack & Back-End Developer. Building the highest quality projects, worldwide."
+					"Back-End & Full-Stack Developer. Building the highest quality projects, worldwide."
 				}
 			</p>
 			<img
 				id="pitchImg"
-				src="https://res.cloudinary.com/dunirybkl/image/upload/v1599669484/portfoli/pitch_cuiyk2.png"
+				src="https://res.cloudinary.com/dunirybkl/image/upload/v1600086165/portfoli/pitch_expr_jmcak2.png"
+				// src="https://res.cloudinary.com/dunirybkl/image/upload/v1599669484/portfoli/pitch_cuiyk2.png"
 				alt="me"
 			/>
-			<p className="landingTitle">Who I am</p>
-			<p className="pageExpl">
-				I started building and breaking stuff when I was 7 and haven't stopped
-				since. I worked in cyber security originally and had my work reach all
-				kinds of areas, among them most major banks in Israel, one of the
-				biggest secure payment processors in the world and the Prime Minister of
-				Israel. Working with all kinds of different clients gave me a deep
-				introduction to product development, and I decided to become a part of
-				it myself. Now I operate my own freelancing business, creating great
-				products for great people and companies.
+			<p className="pageTitle">Who I am</p>
+			<p className="pageExpl landingExpl">
+				I've been building great things since I was 7. Always insisted that the
+				greatest thing anyone can do is create something from nothing. Led me to
+				work with some of the biggest companies in their fields - sometimes
+				reaching as far as Prime Ministers - first in Cyber-Security, now in Web
+				Development.
+				<br />
+				<br />
+				I'm an independent developer, and I pride myself in being a premium
+				freelancer who delivers only the strictest, highest quality projects. I
+				know that what matters most, as a developer, is not necessarily knowing
+				any specific framework and its patterns. This rigidness leads many
+				freelancers to deliver half-baked, disappointing projects that become a
+				headache for you to maintain later. I know that rather, the most
+				important factor in a project's success, is the ability to constantly
+				learn and adapt my expertise to your needs, to match your expectations
+				to the letter. It's what I do best, and I compromise on nothing less.
 			</p>
-			<p className="landingTitle">What I do</p>
-			<p className="pageExpl">
-				I build back-ends and full-stack web applications and websites. I
-				utilize my experience in cyber-security and client management to ensure
-				the projects are always secure, efficient and exactly what you expect.
+			<p className="pageTitle">What I do</p>
+			<p className="pageExpl landingExpl">
+				I build top-quality Back-End, Front-End and Full-Stack projects.
+				Depending on your needs, I can offer services either as an independent
+				developer, or team-up with one of the internationally renown designers I
+				work with to both professionally design and develop your project. I work
+				with both companies and individuals of all levels of understanding of
+				technology, from complete unfamiliarity to absolute mastery. To the
+				unfamiliar, I can build and deploy just about most things you'd need - a
+				web/desktop application and a server to go with it. If you're more
+				familiar with technology, I mainly use the MERN Stack with TypeScript
+				and Redux, with the addition of Electron.js for desktop applications. I
+				also use some more highly specialized technologies, like WebRTC and
+				Socket.IO.
 			</p>
-			<p className="landingTitle">Knowledge</p>
-			<p className="pageExpl">
-				React.js, HTML5, CSS, Bootstrap, Ruby on Rails, ActiveRecord, SQL Git,
+			<p className="pageTitle">Knowledge</p>
+			<p className="pageExpl landingExpl">
+				MongoDB, Express.js, React.js, Electron.js, Node.js, WebRTC (PeerJS),
+				Socket.IO, AWS, HTML5, CSS, Ruby on Rails, ActiveRecord, SQL, Git,
 				Heroku, Cyber-Security, Client Management, Java, C#, Assembly x86,
 				Technological Research
 			</p>
