@@ -21,11 +21,11 @@ export default function Landing(props: props) {
 			/>
 			<p className="pageTitle">Who I am</p>
 			<p className="pageExpl landingExpl">
-				I've been building great things since I was 7. Always insisted that the
-				greatest thing anyone can do is create something from nothing. Led me to
-				work with some of the biggest companies in their fields - sometimes
-				reaching as far as Prime Ministers - first in Cyber-Security, now in Web
-				Development.
+				I've been building great things since I was 7. I've always insisted that
+				the greatest thing anyone can do is create something from nothing. Led
+				me to work with some of the biggest companies in their fields -
+				sometimes reaching as far as Prime Ministers - first in Cyber-Security,
+				now in Web Development.
 				<br />
 				<br />
 				I'm an independent developer, and I pride myself in being a premium
@@ -40,25 +40,24 @@ export default function Landing(props: props) {
 			</p>
 			<p className="pageTitle">What I do</p>
 			<p className="pageExpl landingExpl">
-				I build top-quality Back-End, Front-End and Full-Stack projects.
-				Depending on your needs, I can offer services either as an independent
-				developer, or team-up with one of the internationally renown designers I
-				work with to both professionally design and develop your project. I work
-				with both companies and individuals of all levels of understanding of
-				technology, from complete unfamiliarity to absolute mastery. To the
-				unfamiliar, I can build and deploy just about most things you'd need - a
-				web/desktop application and a server to go with it. If you're more
-				familiar with technology, I mainly use the MERN Stack with TypeScript
-				and Redux, with the addition of Electron.js for desktop applications. I
-				also use some more highly specialized technologies, like WebRTC and
-				Socket.IO.
+				I build top-quality Back-End, Front-End and Full-Stack projects of all
+				sizes. Depending on your needs, I can offer services either as an
+				independent developer, or team-up with one of the internationally renown
+				designers I work with to both professionally design and develop your
+				project. I work with companies and individuals of all levels of
+				understanding of technology, from complete unfamiliarity to absolute
+				mastery. I mostly use the MERN Stack + TypeScript and Redux to build and
+				deploy web scrapers, back-ends, and web/desktop applications. I also use
+				some more highly specialized technologies when needed, like WebRTC and
+				Socket.io. You can find the full list of the tools I work with in the
+				"Knowledge" section down below.
 			</p>
 			<p className="pageTitle">Knowledge</p>
 			<p className="pageExpl landingExpl">
-				MongoDB, Express.js, React.js, Electron.js, Node.js, WebRTC (PeerJS),
-				Socket.IO, AWS, HTML5, CSS, Ruby on Rails, ActiveRecord, SQL, Git,
-				Heroku, Cyber-Security, Client Management, Java, C#, Assembly x86,
-				Technological Research
+				MongoDB, Express.js, React.js, TypeScript, Electron.js, Node.js,
+				Puppeteer, WebRTC (PeerJS), Socket.IO, AWS, HTML5, CSS, Ruby on Rails,
+				ActiveRecord, SQL, Git, Heroku, Cyber-Security, Client Management, Java,
+				C#, Assembly x86, Technological Research
 			</p>
 		</div>
 	);

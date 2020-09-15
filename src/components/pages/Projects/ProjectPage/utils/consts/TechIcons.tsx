@@ -43,20 +43,4 @@ const TechIcons: tiObjs = {
 	),
 };
 
-// enum TechIcons {
-// 	rails = {
-// 		title: "Ruby on Rails",
-// 		imgUrl:
-// 			"https://res.cloudinary.com/dunirybkl/image/upload/v1599749468/portfoli/tech%20icons/railsIcon_xttkk3.png",
-// 	},
-// 	nokogiri = "https://res.cloudinary.com/dunirybkl/image/upload/v1599749493/portfoli/tech%20icons/nokogiriIcon_zzpfry.png",
-// 	sql = "https://res.cloudinary.com/dunirybkl/image/upload/v1599749506/portfoli/tech%20icons/sqlIcon_puft4b.png",
-// 	react = "https://res.cloudinary.com/dunirybkl/image/upload/v1600001274/portfoli/tech%20icons/react-ti_trmovn.png",
-// 	nodejs = "https://res.cloudinary.com/dunirybkl/image/upload/v1600001274/portfoli/tech%20icons/nodejs-ti_jbf5zt.png",
-// 	socketio = "https://res.cloudinary.com/dunirybkl/image/upload/v1600001274/portfoli/tech%20icons/socketio-ti_befxcg.png",
-// 	webrtc = "https://res.cloudinary.com/dunirybkl/image/upload/c_scale,w_40/v1600094735/portfoli/tech%20icons/webrtc-ti_jdmhxr.png",
-// 	electron = "https://res.cloudinary.com/dunirybkl/image/upload/v1600001274/portfoli/tech%20icons/electron-ti_imudw1.png",
-// 	aws = "https://res.cloudinary.com/dunirybkl/image/upload/v1600001274/portfoli/tech%20icons/aws-ti_muu8kr.png",
-// }
-
 export default TechIcons;
