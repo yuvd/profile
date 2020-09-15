@@ -1,6 +1,8 @@
 import React, { useMemo } from "react";
 import ProjectPage from "../ProjectPage";
 
+import TechIcons from "../utils/consts/TechIcons";
+
 import "./ProjectA.css";
 
 type external = { title: string; url: string };
@@ -14,12 +16,8 @@ export default function ProjectA() {
 	const imgUrl =
 		"https://res.cloudinary.com/dunirybkl/image/upload/v1599743060/portfoli/alfred_i8dicv.png";
 
-	const techIcons = useMemo(() => {
-		return [
-			"https://res.cloudinary.com/dunirybkl/image/upload/v1599749468/portfoli/tech%20icons/railsIcon_xttkk3.png",
-			"https://res.cloudinary.com/dunirybkl/image/upload/v1599749493/portfoli/tech%20icons/nokogiriIcon_zzpfry.png",
-			"https://res.cloudinary.com/dunirybkl/image/upload/v1599749506/portfoli/tech%20icons/sqlIcon_puft4b.png",
-		];
+	const techIcons: Array<keyof typeof TechIcons> = useMemo(() => {
+		return ["rails", "nokogiri", "sql"];
 	}, []);
 
 	const externals = useMemo((): external[] => {

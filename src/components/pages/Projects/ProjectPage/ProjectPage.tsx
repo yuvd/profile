@@ -1,22 +1,38 @@
 import React, { useMemo } from "react";
+import { Tooltip } from "@material-ui/core";
+
+import TechIcon from "./utils/models/TechIcon";
+import TechIcons from "./utils/consts/TechIcons";
 
 import "./ProjectPage.css";
 
 type external = { title: string; url: string };
 
+type tiKey = keyof typeof TechIcons;
+type techIcons = Array<tiKey>;
+
 interface Props {
 	title: string;
 	imgUrl: string;
 	desc: string;
-	techIcons: string[];
+	techIcons: techIcons;
 	externals?: external[];
 }
 
 export default function ProjectPage(props: Props) {
 	const icons = useMemo((): JSX.Element[] => {
-		return props.techIcons.map((iconUrl: string, index: number) => {
+		return props.techIcons.map((iconKey: tiKey, index: number) => {
+			const tiObj = TechIcons[iconKey];
+
 			return (
-				<img key={index} className="techIcon" src={iconUrl} alt="tech icon" />
+				<Tooltip title={tiObj.title} arrow placement="top">
+					<img
+						key={index}
+						className="techIcon"
+						src={tiObj.imgUrl}
+						alt="tech icon"
+					/>
+				</Tooltip>
 			);
 		});
 	}, [props.techIcons]);

@@ -26,13 +26,19 @@ export default function ProjNavs() {
 			<Link key={2} to={{ pathname: "/projects", state: { projNum: 1 } }}>
 				{projNum === 1 || projNum === undefined ? (
 					<span style={{ padding: "5px" }}>•</span>
-				) : null}
+				) : (
+					<span style={{ padding: "5px", visibility: "hidden" }}>•</span>
+				)}
 				CampFire
 			</Link>
 		);
 		pl.push(
 			<Link key={1} to={{ pathname: "/projects", state: { projNum: 2 } }}>
-				{projNum === 2 ? <span style={{ padding: "5px" }}>•</span> : null}
+				{projNum === 2 ? (
+					<span style={{ padding: "5px" }}>•</span>
+				) : (
+					<span style={{ padding: "5px", visibility: "hidden" }}>•</span>
+				)}
 				Alfred
 			</Link>
 		);
