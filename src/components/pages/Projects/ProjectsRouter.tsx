@@ -1,26 +1,12 @@
 import React, { useMemo, ReactElement } from "react";
 import ProjectA from "./ProjectPage/ProjectA/ProjectA";
 import ProjectB from "./ProjectPage/ProjectB/ProjectB";
-import { useLocation } from "react-router-dom";
+import { useSelector } from "react-redux";
 
-type projNum = 1 | 2 | 3 | undefined;
+import storeState from "../../../utils/types/redux/state";
 
-interface Props {
-	projNum: projNum;
-}
-
-type location = { state: { projNum: projNum | undefined } };
-
-export default function ProjectsRouter(props: Props) {
-	const location: location = useLocation();
-	let projNum: projNum = undefined;
-	if (location) {
-		if (location.state) {
-			if (location.state.projNum) {
-				projNum = location.state.projNum;
-			}
-		}
-	}
+export default function ProjectsRouter() {
+	const activeProj = useSelector((state: storeState) => state.activeProj);
 
 	const projects = useMemo((): ReactElement[] => {
 		const p = [];
@@ -31,9 +17,5 @@ export default function ProjectsRouter(props: Props) {
 		return p;
 	}, []);
 
-	return (
-		<span className="page">
-			{projNum ? projects[projNum - 1] : projects[0]}
-		</span>
-	);
+	return <span className="page">{projects[activeProj! - 1]}</span>;
 }

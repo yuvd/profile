@@ -1,7 +1,6 @@
 import React, { useMemo } from "react";
 import { Tooltip } from "@material-ui/core";
 
-import TechIcon from "./utils/models/TechIcon";
 import TechIcons from "./utils/consts/TechIcons";
 
 import "./ProjectPage.css";

@@ -1,50 +1,66 @@
-import React, { useMemo } from "react";
-import { Link, useLocation } from "react-router-dom";
+import React, { useEffect, useMemo, useRef } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { SlideDown } from "react-slidedown";
 import "react-slidedown/lib/slidedown.css";
 
+import PROJ_ACTIONS from "../../../redux/actions/index";
+import storeState from "../../../utils/types/redux/state";
+
 import "./ProjNavs.css";
 
-type projNum = 1 | 2 | 3 | undefined;
-type location = { state: { projNum: projNum } };
-
 export default function ProjNavs() {
-	const location: location = useLocation();
-	let projNum: projNum = undefined;
-	if (location) {
-		if (location.state) {
-			if (location.state.projNum) {
-				projNum = location.state.projNum;
-			}
+	const proj1Marker = useRef<HTMLSpanElement>(null);
+	const proj2Marker = useRef<HTMLSpanElement>(null);
+
+	const activeProj = useSelector((state: storeState) => state.activeProj);
+	const dispatch = useDispatch();
+
+	useEffect(() => {
+		if (activeProj === 1) {
+			proj2Marker.current!.style.visibility = "hidden";
+			proj1Marker.current!.style.visibility = "visible";
+		} else if (activeProj === 2) {
+			proj1Marker.current!.style.visibility = "hidden";
+			proj2Marker.current!.style.visibility = "visible";
 		}
-	}
+	}, [activeProj]);
 
 	const projLinks = useMemo((): JSX.Element[] => {
 		const pl = [];
 
 		pl.push(
-			<Link key={2} to={{ pathname: "/projects", state: { projNum: 1 } }}>
-				{projNum === 1 || projNum === undefined ? (
-					<span style={{ padding: "5px" }}>•</span>
-				) : (
-					<span style={{ padding: "5px", visibility: "hidden" }}>•</span>
-				)}
+			<span
+				className="projNav"
+				key={1}
+				onClick={() => dispatch(PROJ_ACTIONS.changeProj(1))}
+			>
+				<span
+					ref={proj1Marker}
+					style={{ padding: "5px", visibility: "hidden" }}
+				>
+					•
+				</span>
 				CampFire
-			</Link>
+			</span>
 		);
 		pl.push(
-			<Link key={1} to={{ pathname: "/projects", state: { projNum: 2 } }}>
-				{projNum === 2 ? (
-					<span style={{ padding: "5px" }}>•</span>
-				) : (
-					<span style={{ padding: "5px", visibility: "hidden" }}>•</span>
-				)}
+			<span
+				className="projNav"
+				key={2}
+				onClick={() => dispatch(PROJ_ACTIONS.changeProj(2))}
+			>
+				<span
+					ref={proj2Marker}
+					style={{ padding: "5px", visibility: "hidden" }}
+				>
+					•
+				</span>
 				Alfred
-			</Link>
+			</span>
 		);
 
 		return pl;
-	}, [projNum]);
+	}, [dispatch]);
 
 	return (
 		<SlideDown>

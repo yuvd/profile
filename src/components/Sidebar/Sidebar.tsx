@@ -1,14 +1,16 @@
 import React, { useState, useMemo, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-
-import "./Sidebar.css";
+import { useDispatch } from "react-redux";
 import ProjNavs from "./ProjNavs/ProjNavs";
 
-interface props {}
+import "./Sidebar.css";
+import PROJ_ACTIONS from "../../redux/actions/index";
 
-export default function Sidebar(props: props) {
+export default function Sidebar() {
 	const [showProjs, toggleShowProjs] = useState(false);
 	const location = useLocation();
+
+	const dispatch = useDispatch();
 
 	useEffect(() => {
 		location.pathname === "/projects"
@@ -25,7 +27,12 @@ export default function Sidebar(props: props) {
 			</Link>
 		);
 		nl.push(
-			<Link key="2" className="sbLink" to="/projects">
+			<Link
+				onClick={() => dispatch(PROJ_ACTIONS.changeProj(1))}
+				key="2"
+				className="sbLink"
+				to="/projects"
+			>
 				Projects
 			</Link>
 		);
@@ -37,7 +44,7 @@ export default function Sidebar(props: props) {
 		);
 
 		return nl;
-	}, [showProjs]);
+	}, [showProjs, dispatch]);
 
 	return (
 		<div id="sidebar">
