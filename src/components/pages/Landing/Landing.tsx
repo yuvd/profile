@@ -16,7 +16,7 @@ export default function Landing(props: props) {
 			<img
 				id="pitchImg"
 				src="https://res.cloudinary.com/dunirybkl/image/upload/v1600086165/portfoli/pitch_expr_jmcak2.png"
-				// src="https://res.cloudinary.com/dunirybkl/image/upload/v1599669484/portfoli/pitch_cuiyk2.png"
+				// src="https://res.cloudinary.com/dunirybkl/image/upload/v1600270202/portfoli/pitch_bw_bibyyr.jpg"
 				alt="me"
 			/>
 			<p className="pageTitle">Who I am</p>

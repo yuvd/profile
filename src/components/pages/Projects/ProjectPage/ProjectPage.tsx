@@ -5,7 +5,7 @@ import TechIcons from "./utils/consts/TechIcons";
 
 import "./ProjectPage.css";
 
-type external = { title: string; url: string };
+import external from "../../../../utils/types/external";
 
 type tiKey = keyof typeof TechIcons;
 type techIcons = Array<tiKey>;
@@ -24,13 +24,8 @@ export default function ProjectPage(props: Props) {
 			const tiObj = TechIcons[iconKey];
 
 			return (
-				<Tooltip title={tiObj.title} arrow placement="top">
-					<img
-						key={index}
-						className="techIcon"
-						src={tiObj.imgUrl}
-						alt="tech icon"
-					/>
+				<Tooltip key={index} title={tiObj.title} arrow placement="top">
+					<img className="techIcon" src={tiObj.imgUrl} alt="tech icon" />
 				</Tooltip>
 			);
 		});
@@ -46,7 +41,8 @@ export default function ProjectPage(props: Props) {
 						{externalObj.title}
 					</a>
 				);
-				if (index !== props.externals!.length - 1) exts.push(<span>|</span>);
+
+				if (index < props.externals!.length - 1) exts.push(<span> | </span>);
 			});
 
 			return exts;

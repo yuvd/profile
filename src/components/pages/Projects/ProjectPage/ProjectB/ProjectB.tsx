@@ -5,7 +5,7 @@ import TechIcons from "../utils/consts/TechIcons";
 
 import "./ProjectB.css";
 
-type external = { title: string; url: string };
+// import external from "../../../../../utils/types/external";
 
 export default function ProjectB() {
 	const title = "CampFire";
