@@ -1,0 +1,44 @@
+#appRoot {
+	display: flex;
+	height: 100vh;
+	font-family: "Open Sans";
+	scroll-behavior: smooth;
+	white-space: pre-line;
+}
+
+.page {
+	padding-left: 15%;
+	padding-top: 5%;
+	width: 100%;
+	box-sizing: border-box;
+	overflow: scroll;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.pageExpl {
+	margin-bottom: 60px;
+	max-width: 70%;
+	/* word-wrap: break-word; */
+	line-height: 1.5;
+	font-weight: 300;
+	text-align: justify;
+	word-break: keep-all;
+}
+
+.pageTitle {
+	font-family: Quatro Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+
+	color: #303030;
+}
+
+#pageSubtitle {
+	font-weight: 300;
+	font-size: 16px;
+}

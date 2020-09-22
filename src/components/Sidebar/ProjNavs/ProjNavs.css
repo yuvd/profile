@@ -1,0 +1,17 @@
+#projNavs {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	margin-left: 25%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+/* #projNavs > a {
+	padding: 3px;
+} */
+
+.projNav {
+	padding: 3px;
+	cursor: pointer;
+}
