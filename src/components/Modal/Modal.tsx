@@ -16,7 +16,6 @@ export default function Modal(props: Props) {
 	useOcd(modalContentRef, () => toggleShow(false));
 
 	useEffect(() => {
-		console.log("ran");
 		toggleShow(props.show);
 	}, [props.show, show]);
 

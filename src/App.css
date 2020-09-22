@@ -3,6 +3,7 @@
 	height: 100vh;
 	font-family: "Open Sans";
 	scroll-behavior: smooth;
+	white-space: pre-line;
 }
 
 .page {
@@ -20,9 +21,11 @@
 .pageExpl {
 	margin-bottom: 60px;
 	max-width: 70%;
-	word-wrap: break-word;
+	/* word-wrap: break-word; */
 	line-height: 1.5;
 	font-weight: 300;
+	text-align: justify;
+	word-break: keep-all;
 }
 
 .pageTitle {

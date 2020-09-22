@@ -33,10 +33,11 @@ export default function Landing(props: props) {
 				know that what matters most, as a developer, is not necessarily knowing
 				any specific framework and its patterns. This rigidness leads many
 				freelancers to deliver half-baked, disappointing projects that become a
-				headache for you to maintain later. I know that rather, the most
+				headache for you to maintain later on. I know that rather, the most
 				important factor in a project's success, is the ability to constantly
-				learn and adapt my expertise to your needs, to match your expectations
-				to the letter. It's what I do best, and I compromise on nothing less.
+				learn and adapt my expertise to your needs, so I can match your
+				expectations to the letter. It's what I do best, and I compromise on
+				nothing less.
 			</p>
 			<p className="pageTitle">What I do</p>
 			<p className="pageExpl landingExpl">
