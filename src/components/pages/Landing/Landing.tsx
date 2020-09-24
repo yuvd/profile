@@ -13,12 +13,14 @@ export default function Landing(props: props) {
 					"Back-End & Full-Stack Developer. Building the highest quality projects, worldwide."
 				}
 			</p>
-			<img
-				id="pitchImg"
-				src="https://res.cloudinary.com/dunirybkl/image/upload/v1600086165/portfoli/pitch_expr_jmcak2.png"
-				// src="https://res.cloudinary.com/dunirybkl/image/upload/v1600270202/portfoli/pitch_bw_bibyyr.jpg"
-				alt="me"
-			/>
+			<div id="pitchImgContainer">
+				<img
+					id="pitchImg"
+					// src="https://res.cloudinary.com/dunirybkl/image/upload/v1600086165/portfoli/pitch_expr_jmcak2.png"
+					src="https://res.cloudinary.com/dunirybkl/image/upload/v1600270202/portfoli/pitch_bw_bibyyr.jpg"
+					alt="me"
+				/>
+			</div>
 			<p className="pageTitle">Who I am</p>
 			<p className="pageExpl landingExpl">
 				I've been building great things since I was 7. I've always insisted that

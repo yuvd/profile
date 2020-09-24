@@ -55,7 +55,8 @@ export default function ProjectPage(props: Props) {
 			<span className="projBannerContainer">{props.projBanner}</span>
 			<p className="pageExpl projectExpl">{props.desc}</p>
 			<div className="tiContainer">{icons}</div>
-			{externals ? <div className="extsContainer">{externals}</div> : null}
+			{/* {externals ? <div className="extsContainer">{externals}</div> : null} */}
+			<div className="extsContainer">{externals}</div>
 		</div>
 	);
 }

@@ -2,8 +2,12 @@
 	display: flex;
 	height: 100vh;
 	font-family: "Open Sans";
-	scroll-behavior: smooth;
 	white-space: pre-line;
+}
+
+* {
+	scroll-behavior: smooth;
+	scrollbar-width: none;
 }
 
 .page {
@@ -12,7 +16,6 @@
 	width: 100%;
 	box-sizing: border-box;
 	overflow: scroll;
-	scrollbar-width: none;
 }
 
 ::-webkit-scrollbar {
@@ -25,8 +28,8 @@
 	/* word-wrap: break-word; */
 	line-height: 1.5;
 	font-weight: 300;
-	text-align: justify;
-	word-break: keep-all;
+	/* text-align: justify;
+	word-break: keep-all; */
 }
 
 .pageTitle {
