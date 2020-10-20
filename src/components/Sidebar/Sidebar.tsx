@@ -5,7 +5,6 @@ import ProjNavs from "./ProjNavs/ProjNavs";
 
 import "./Sidebar.css";
 import PROJ_ACTIONS from "../../redux/actions/index";
-import AnimateHeight from "react-animate-height";
 
 export default function Sidebar() {
 	const [showProjs, toggleShowProjs] = useState(false);

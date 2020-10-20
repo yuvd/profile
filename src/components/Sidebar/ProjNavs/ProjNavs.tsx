@@ -1,7 +1,6 @@
 import React, { useEffect, useMemo, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { SlideDown } from "react-slidedown";
-import AnimateHeight from "react-animate-height";
 import "react-slidedown/lib/slidedown.css";
 
 import PROJ_ACTIONS from "../../../redux/actions/index";
@@ -64,8 +63,8 @@ export default function ProjNavs() {
 	}, [dispatch]);
 
 	return (
-		// <AnimateHeight duration={500} height={"auto"}>
-		<div id="projNavs">{projLinks}</div>
-		// </AnimateHeight>
+		<SlideDown>
+			<div id="projNavs">{projLinks}</div>
+		</SlideDown>
 	);
 }
