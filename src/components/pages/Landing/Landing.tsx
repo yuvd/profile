@@ -23,19 +23,9 @@ export default function Landing(props: props) {
 			</div>
 			<p className="pageTitle">Who I am</p>
 			<p className="pageExpl landingExpl">
-				I've been building great things since I was 7. I've always insisted that
-				the greatest thing anyone can do is create something from nothing. Led
-				me to work with some of the biggest companies in their fields -
-				sometimes reaching as far as Prime Ministers - first in Cyber-Security,
-				now in Web Development.
-				<br />
-				<br />
-				I'm an independent developer, and I pride myself in being a premium
-				freelancer who delivers only the strictest, highest quality projects. I
-				know that what matters most, as a developer, is not necessarily knowing
-				any specific framework and its patterns. This rigidness leads many
-				freelancers to deliver half-baked, disappointing projects that become a
-				headache for you to maintain later on. I know that rather, the most
+				Independent developer delivering only the strictest, highest quality
+				projects. Worked in several industries reaching all levels of
+				management, sometimes as far as Prime Ministers. I know that the most
 				important factor in a project's success, is the ability to constantly
 				learn and adapt my expertise to your needs, so I can match your
 				expectations to the letter. It's what I do best, and I compromise on
