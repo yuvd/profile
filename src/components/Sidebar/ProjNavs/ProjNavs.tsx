@@ -67,7 +67,7 @@ export default function ProjNavs(props: Props) {
 	}, [dispatch]);
 
 	return (
-		<SlideDown closed={!props.showProjs}>
+		<SlideDown closed={!props.showProjs} className={"slider"}>
 			<div id="projNavs">{projLinks}</div>
 		</SlideDown>
 	);

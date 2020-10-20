@@ -3,8 +3,8 @@
 	flex-direction: column;
 	text-align: left;
 	margin-left: 25%;
-	margin-top: 10%;
-	margin-bottom: 10%;
+	margin-top: 8%;
+	margin-bottom: 8%;
 }
 
 /* #projNavs > a {
@@ -13,5 +13,6 @@
 
 .projNav {
 	padding: 3px;
+	padding-left: 25%;
 	cursor: pointer;
 }
