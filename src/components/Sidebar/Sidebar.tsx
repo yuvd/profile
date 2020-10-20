@@ -36,7 +36,9 @@ export default function Sidebar() {
 				Projects
 			</Link>
 		);
-		if (showProjs) nl.push(<ProjNavs />);
+
+		nl.push(<ProjNavs showProjs={showProjs} />);
+
 		nl.push(
 			<Link key="3" className="sbLink" to="/contact">
 				Contact

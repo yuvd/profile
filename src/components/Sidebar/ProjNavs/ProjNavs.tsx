@@ -8,7 +8,11 @@ import storeState from "../../../utils/types/redux/state";
 
 import "./ProjNavs.css";
 
-export default function ProjNavs() {
+interface Props {
+	showProjs: boolean;
+}
+
+export default function ProjNavs(props: Props) {
 	const proj1Marker = useRef<HTMLSpanElement>(null);
 	const proj2Marker = useRef<HTMLSpanElement>(null);
 
@@ -63,7 +67,7 @@ export default function ProjNavs() {
 	}, [dispatch]);
 
 	return (
-		<SlideDown>
+		<SlideDown closed={!props.showProjs}>
 			<div id="projNavs">{projLinks}</div>
 		</SlideDown>
 	);
